@@ -1,0 +1,23 @@
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+lib
+include
+bin
+var
+sdist
+develop-eggs
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+#Translations
+*.mo
+
+#Kate temp files
+*~

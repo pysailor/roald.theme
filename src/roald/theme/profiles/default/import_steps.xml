@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="roald_theme_various"
+               version="0000-01"
+               handler="roald.theme.setuphandlers.importVarious"
+               title="Roald Theme manual setup steps">
+    Roald Theme installer steps
+  </import-step>
+</import-steps>
+
+

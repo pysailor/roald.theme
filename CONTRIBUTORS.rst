@@ -1,0 +1,4 @@
+Contributors
+============
+
+- Wolfgang Thomas
