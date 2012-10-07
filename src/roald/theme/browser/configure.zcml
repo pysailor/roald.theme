@@ -3,4 +3,11 @@
            xmlns:five="http://namespaces.zope.org/five"
            xmlns:zcml="http://namespaces.zope.org/zcml">
 
+
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="plonetheme.drupal"
+      />
+
 </configure>

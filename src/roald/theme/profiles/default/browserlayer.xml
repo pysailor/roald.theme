@@ -1,0 +1,4 @@
+<layers>
+    <layer name="roald.theme Theme"
+           interface="roald.theme.browser.interfaces.IThemeSpecific" />
+</layers>

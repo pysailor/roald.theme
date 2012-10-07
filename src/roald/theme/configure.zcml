@@ -4,13 +4,24 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="roald">
 
-    <five:registerPackage package="." initialize=".initialize" />
 
-    <include package=".browser" />
+  <five:registerPackage package="." initialize=".initialize" />
+  <includeDependencies package="." /><!-- Else tests are broken -->
 
-    <genericsetup:registerProfile
+  <include package=".browser" />
+
+  <i18n:registerTranslations directory="locales" />
+  <cmf:registerDirectory name="roald_theme_custom"/>
+
+  <!-- Static resources at /++theme++roald.theme -->
+  <include package="plone.resource" file="meta.zcml"/>
+  <plone:static directory="static" type="theme" name="roald.theme" />
+
+  <genericsetup:registerProfile
         name="default"
         title="Roald Amundsen - Sailtraining.de Theme"
         directory="profiles/default"
